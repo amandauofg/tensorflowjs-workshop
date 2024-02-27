@@ -35,12 +35,22 @@
             <div id="webcam-container"></div>
             <div id="label-container"></div>
           </div>
-
+          
           <div id="robot-container"></div>
         </div>
 
         <div id="teachable-machine-model">
           <!-- Add your Teachable Machine model here -->
+          <script>
+            let robotContainer = document.getElementById("robot-container");
+            let robotFace = document.createElement("img");
+            let robotTalk = document.createElement("p");
+            robotTalk.className = "nes-balloon from-left";
+            robotTalk.innerText = "What the fucking just happened?";
+            robotFace.src = "/images/angry.png";
+            robotContainer.appendChild(robotTalk);
+            robotContainer.appendChild(robotFace);
+            </script>
         </div>
       </div>
     </div>
